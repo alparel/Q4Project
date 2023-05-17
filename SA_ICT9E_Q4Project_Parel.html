@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background: url(Length.webp);
+			background-size: cover;
+			background-attachment: fixed;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+<div class="col-xl-2"></div>
+<br>
+<div class="col-xl-8 container bg-warning text-light" align="center">
+<br>
+<h1 align="center" style="color: white;">Length Converter</h1>
+<br>
+<br>
+<h4>Input value in millimeters</h4>
+<input type="number" name="mm" id="mm"><b>mm</b>
+<div>
+<br>
+<h3>Choose what to convert</h3>
+<br>
+<button type="submit" onclick="Compute1()" style="margin-right: 100px;" class="btn btn-lg btn-info">
+<script type="text/javascript">
+function Compute1() {
+	var mm = document.getElementById("mm").value;
+	var cm = Number (mm) / 10;
+	window.alert(mm + " " + "millimeters/mm is equal to " + cm + " " + "centimeters/cm.");
+	}
+</script>
+centimeters/cm</button><button type="submit" onclick="Compute2()" style="margin-right: 100px;" class="btn btn-lg btn-info">
+<script type="text/javascript">
+function Compute2() {
+	var mm = document.getElementById("mm").value;
+	var m = Number (mm) / 1000;
+	window.alert(mm + " " + "millimeters/mm is equal to " + m + " " + "meters/m.");
+	}
+</script>
+meters/m</button><button type="submit" onclick="Compute3()" class="btn btn-lg btn-info">
+<script type="text/javascript">
+	function Compute3() {
+	var mm = document.getElementById("mm").value;
+	var km = Number (mm) / 1000000;
+	window.alert(mm + " " + "millimeters/m is equal to " + km + " " + "kilometers/km.");
+	}
+</script>
+kilometers/km</button>
+<br>
+<br>
+<br>
+</div>
+</div>
+<div class="col-xl-2"></div>
+<br>
+<div class="container">
+		<table class="table table-bordered" style="opacity: 0.9;">
+			<thead class="table-warning">
+				<th class="col-12" style="text-align: center;">Check out our other converters!</th>
+			</thead>
+			<tbody class="table-light">
+			<tr align="center">
+				<th><a href="">Volume Converter</a><br><br>
+				<a href="">Area Converter</a><br><br>
+				<a href="">Energy Converter</a><br><br>
+				<a href="">Force Converter</a><br><br>
+				<a href="">Speed Converter</a><br><br>
+				<a href="">Currency Converter</a><br><br>
+				<a href="">Weight Converter</a><br><br>
+				<a href="">Mass Converter</a><br><br>
+				<a href="">Temperature Converter</a><br><br>
+				<a href="">Time Converter</a></th><br>
+			</tr>
+		</tbody>
+</script>
+</body>
+</html>
